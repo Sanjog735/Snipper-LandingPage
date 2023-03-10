@@ -1,0 +1,21 @@
+.features {
+  padding: 12.5rem 0;
+
+  &--section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    gap: 6rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+
+  &__img-box {
+    @include respond(tab-port) {
+      grid-row: 1;
+    }
+  }
+}

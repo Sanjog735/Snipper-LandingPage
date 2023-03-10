@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 59.375%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 53.125%;
+  }
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #434041;
+  -webkit-font-smoothing: antialiased;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+video,
+svg,
+img,
+canvas {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.btn {
+  padding: 1.8rem 3.6rem;
+  background: #000;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.8rem;
+  display: inline-block;
+  transition: all 0.2s ease-out;
+}
+.btn span {
+  font-weight: 400;
+  color: #a1a1a1;
+}
+.btn:hover {
+  background: #343434;
+}
+
+.heading-primary {
+  font-size: 4.8rem;
+  color: #000;
+}
+@media (max-width: 62.5em) {
+  .heading-primary {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 25em) {
+  .heading-primary {
+    width: 100%;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.2rem;
+  color: #000;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.8rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 2.4rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 3.6rem;
+}
+
+.header {
+  padding: 5.2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav--list {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.8rem;
+}
+@media (max-width: 43.75em) {
+  .header__nav--list .search-img {
+    display: none;
+  }
+}
+@media (max-width: 43.75em) {
+  .header__nav--list {
+    opacity: 0;
+    flex-direction: column;
+    background: #fff;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    right: 0;
+    top: 0;
+    height: 20vh;
+    justify-content: center;
+  }
+}
+.header__mobile-nav {
+  display: none;
+}
+@media (max-width: 43.75em) {
+  .header__mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+}
+
+.footer--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+}
+@media (max-width: 37.5em) {
+  .footer--container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+.footer__links {
+  display: flex;
+  gap: 4.2rem;
+}
+@media (max-width: 25em) {
+  .footer__links {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.footer__links a:hover {
+  color: #000;
+}
+
+.features {
+  padding: 12.5rem 0;
+}
+.features--section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 6rem;
+}
+@media (max-width: 56.25em) {
+  .features--section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+@media (max-width: 56.25em) {
+  .features__img-box {
+    grid-row: 1;
+  }
+}
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  background: url("/src/assects/Background.png");
+  background-size: cover;
+  background-position: top;
+  overflow: hidden;
+  position: relative;
+}
+.landing__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.landing__content-box {
+  width: 90%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.landing__content-img {
+  border: 2px solid reds;
+  position: absolute;
+  bottom: -20%;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (min-width: 112.5em) {
+  .landing__content-img {
+    bottom: -10%;
+  }
+}
+@media (max-width: 75em) {
+  .landing__content-img {
+    bottom: -1%;
+  }
+}
+@media (max-width: 56.25em) {
+  .landing__content-img {
+    bottom: -1%;
+  }
+}
+.landing__content-img img {
+  height: auto;
+  width: 100%;
+}

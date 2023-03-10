@@ -1,0 +1,28 @@
+.footer {
+  &--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 5rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 4.2rem;
+
+    @media (max-width: 25em) {
+      // below 400px
+      flex-direction: column;
+      text-align: center;
+    }
+
+    & a:hover {
+      color: $black;
+    }
+  }
+}

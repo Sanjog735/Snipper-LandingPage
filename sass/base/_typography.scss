@@ -1,0 +1,20 @@
+.heading-primary {
+  font-size: 4.8rem;
+  color: $black;
+
+  @media (max-width: 62.5em) {
+    // below 1000px
+    font-size: 4rem;
+  }
+  @media (max-width: 25em) {
+    width: 100%;
+  }
+}
+.heading-secondary {
+  font-size: 3.2rem;
+  color: $black;
+}
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}

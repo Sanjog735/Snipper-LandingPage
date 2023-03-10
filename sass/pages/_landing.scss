@@ -1,0 +1,52 @@
+.landing {
+  width: 100%;
+  height: 100vh;
+  background: url("/src/assects/Background.png");
+  background-size: cover;
+  background-position: top;
+  overflow: hidden;
+  position: relative;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__content {
+    &-box {
+      width: 90%;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+    }
+
+    &-img {
+      border: 2px solid reds;
+      position: absolute;
+      bottom: -20%;
+      width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include respond(big-desk) {
+        // above 1800
+        bottom: -10%;
+      }
+
+      @include respond(tab-land) {
+        bottom: -1%;
+      }
+      @include respond(tab-port) {
+        bottom: -1%;
+      }
+
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+}
